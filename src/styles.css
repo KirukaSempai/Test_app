@@ -68,6 +68,9 @@ p {
 .App_WrongCredentials {
   color: red !important;
 }
+.App__Error {
+  color: red !important;
+}
 .Form__Align {
   height: 88px;
 }
