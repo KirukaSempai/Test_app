@@ -65,9 +65,6 @@ p {
   height: 2.7em;
 }
 
-.App_WrongCredentials {
-  color: red !important;
-}
 .App__Error {
   color: red !important;
 }
