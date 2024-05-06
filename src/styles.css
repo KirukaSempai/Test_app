@@ -1,0 +1,73 @@
+html {
+  background-color: #fbfafd;
+  letter-spacing: 1px;
+  color: #5e5873;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+p {
+  margin: 0px 0px 10px;
+}
+.App {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.App__Box {
+  background-color: #ffffff;
+  width: 35em;
+  height: 35em;
+  border-radius: 5px;
+  box-shadow: 1px 4px 9px -2px #dbdbdb;
+}
+.App__Align {
+  text-align: left;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 3em;
+}
+.App__Welcome {
+  text-align: left;
+  overflow-wrap: break-word;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 2.4em;
+}
+.App__Name {
+  color: #7367f0;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.App__Form {
+  display: flex;
+  align-self: flex-start;
+  display: grid;
+  height: 88px;
+  gap: 5px 20px;
+  margin-top: 25px;
+}
+.App__Button {
+  min-width: 4em;
+  text-align: center;
+  font-size: 19px;
+  background-color: #7367f0;
+  border: 1px solid #e2e0e6;
+  transition: all 250ms ease-in-out;
+  color: white;
+  border-radius: 9px;
+  width: 24.3em;
+  height: 2.7em;
+}
+
+.App_WrongCredentials {
+  color: red !important;
+}
+.Form__Align {
+  height: 88px;
+}

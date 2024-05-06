@@ -1,0 +1,64 @@
+.Messages_Welcome {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.Message_Profile {
+  display: flex;
+  float: left;
+}
+.Message_Profile-Image {
+  margin: 25px 10px 0 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.Messages_Name {
+  margin: 0;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 28;
+}
+.Messages_Profile-Name {
+  margin: 0;
+  margin-right: 3em;
+  margin-top: 1em;
+  font-size: 28;
+  font-weight: 800;
+}
+.Messages_Form {
+  display: grid;
+  background-color: #f3f2f7;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid #ebe9f1;
+  min-width: 30em;
+  grid-template-columns: 19em 20em 21em;
+  margin-top: 1em;
+}
+.Messages_Naming {
+  margin: 0.8em 0 0.6em 50px;
+}
+.Messages_Naming__Message {
+  margin: 0.8em 0 0.6em 0;
+}
+.Messages_Row {
+  display: grid;
+  padding-top: 20px;
+  padding-left: 20px;
+  grid-template-columns: 20.7em 17em 77.3em;
+  grid-auto-rows: minmax(60px, auto);
+  background-color: #f8f9fd;
+  border-bottom: 3px solid #e2e0e6;
+}
+.Messages_Date {
+  min-width: 250px;
+  font-weight: 600;
+}
+.Messages_Type {
+  min-width: 285px;
+  text-transform: capitalize;
+}
+.Messages_Message {
+  min-width: 485px;
+  font-weight: 600;
+}
