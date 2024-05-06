@@ -31,18 +31,9 @@ const Label = styled.div`
 
 const Login = () => {
   const [auth, setAuth] = useState(null);
+  const [cred, setCred] = useState(null);
 
   const navigate = useNavigate();
-
-  function WrongCred(cred) {
-    return (
-      <Group>
-        <Label className="App_WrongCredentials">
-          Неверный логин или пароль
-        </Label>
-      </Group>
-    );
-  }
 
   const url = "https://api.test.aqua-delivery.ru/v1/auth/login";
 
@@ -58,10 +49,11 @@ const Login = () => {
         password: values.password,
       })
       .then((resp) => {
-        if (resp.data.success) {
+        if (resp.data.success === true) {
           onLogin(true);
-        } else {
-          return { [FORM_ERROR]: "Login Failed" };
+        }
+        if (resp.data.success === false) {
+          setCred(resp.data.message);
         }
       })
       .catch((err) => {
@@ -104,6 +96,7 @@ const Login = () => {
                     Login
                   </button>
                 </Group>
+                {cred && <p className="App__Error">{cred}</p>}
               </FormWrapper>
             )}
           </Form>
