@@ -1,7 +1,5 @@
 import "../Messages.css";
 import axios from "axios";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function UserMessages() {

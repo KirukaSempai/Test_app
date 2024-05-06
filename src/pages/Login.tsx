@@ -4,7 +4,6 @@ import { Form } from "../components/form";
 import { Input } from "../components/input";
 import styled from "styled-components";
 import axios from "axios";
-import { FORM_ERROR } from "final-form";
 import { useNavigate } from "react-router-dom";
 
 const Group = styled.div`
